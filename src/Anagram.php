@@ -30,28 +30,23 @@
               return $sorted_list_array;
           }
 
-          function compareTheShit($sorted_list_array, $result)
-          {
+        function compareTheShit($sorted_list_array, $result)
+        {
             foreach($sorted_list_array as $item) {
-              if ($item == $result) {
-                
-              }
+                if ($item == $result) {
+                  return "anagram";
+                }
             }
-          }
-            // return join($result);
+        }
 
+        function save()
+        {
+            array_push($_SESSION['list_of_anagrams'], $this);
+        }
+        static function getAll()
+        {
+            return $_SESSION['list_of_anagrams'];
+        }
 
-        // }
-        // function makeAnagram($input_list, $input_word)
-        // {
-        //     $anagram_word = str_split($input_word);
-        //     $list_of_words = str_split($input_list);
-        //
-        //
-        //     }
-        //
-        //     return join($result);
-        // }
-    // }
-  }
+    }
  ?>
