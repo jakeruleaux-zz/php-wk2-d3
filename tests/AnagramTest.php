@@ -19,7 +19,7 @@
         {
 
           $test_AnagramMaker = new AnagramMaker();
-          $input = "edr";
+          $input = "edr, red";
 
           $result = $test_AnagramMaker->makeAnagram($input);
 

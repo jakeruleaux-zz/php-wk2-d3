@@ -2,7 +2,7 @@
 
     class AnagramMaker
     {
-        function makeAnagram($input_word)
+        function makeAnagramgit($input_word)
         {
             $str = $input_word;
             $letters= str_split($str);
