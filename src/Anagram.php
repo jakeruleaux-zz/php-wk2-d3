@@ -2,7 +2,7 @@
 
     class AnagramMaker
     {
-        function makeAnagramgit($input_word)
+        function makeAnagram($input_word)
         {
             $str = $input_word;
             $letters= str_split($str);
@@ -16,20 +16,20 @@
             return implode($result);
 
         }
-        function makeAnagram_two($result, $input_list)
+        function makeAnagram_two($input_list)
         {
-
+            $sorted_list_array = array();
             $list_of_words = explode(" ", $input_list);
-            $anagram = array();
-            sort($list_of_words);
             foreach ($list_of_words as $word) {
-                if ($word == $result) {
-                  array_push($anagram, $word);
-                }
+              $anagram_array = str_split($word);
 
-                return $anagram;
-            }
-        }
+              sort($anagram_array);
+              $final_word = implode("", $anagram_array);
+              array_push($sorted_list_array, $final_word);
+              }
+              return $sorted_list_array;
+          }
+
 
             // return join($result);
 

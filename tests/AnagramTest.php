@@ -23,7 +23,7 @@
 
           $result = $test_AnagramMaker->makeAnagram($input);
 
-          $this->assertEquals("der", $result);
+          $this->assertEquals(['der'], ['der'], $result);
         }
     }
 
