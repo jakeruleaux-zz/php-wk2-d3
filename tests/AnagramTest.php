@@ -12,7 +12,7 @@
             $result =
             $test_AnagramMaker->makeAnagram($input);
 
-            $this->assertEquals(["b", "a", "t"], $result);
+            $this->assertEquals("abt", $result);
         }
 
 

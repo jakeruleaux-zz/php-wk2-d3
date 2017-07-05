@@ -5,10 +5,18 @@
         function makeAnagram($input_word)
         {
             $str = $input_word;
-            $array = str_split($str);
-            return $array;
+            $letters= str_split($str);
+            sort($letters);
+            $result = array();
+            foreach ($letters as $letter) {
+            array_push($result, $letter);
+            }
+            
+            return implode($result);
 
         }
+
+
     }
 
  ?>
