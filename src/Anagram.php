@@ -30,7 +30,14 @@
               return $sorted_list_array;
           }
 
-
+          function compareTheShit($sorted_list_array, $result)
+          {
+            foreach($sorted_list_array as $item) {
+              if ($item == $result) {
+                
+              }
+            }
+          }
             // return join($result);
 
 

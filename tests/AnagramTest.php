@@ -25,6 +25,19 @@
 
           $this->assertEquals(['der'], ['der'], $result);
         }
+
+        function test_compareTheShit()
+        {
+
+          $test_AnagramMaker = new AnagramMaker();
+          $input1 = "der";
+          $input2 = 'der';
+
+          $result =
+          $test_AnagramMaker->makeAnagram($input1, $input2);
+
+          $this->assertEquals('der', $result);
+        }
     }
 
  ?>
